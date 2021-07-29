@@ -319,6 +319,13 @@ if ( ! function_exists( 'oceanwp_body_classes' ) ) {
 			}
 		}
 
+		/**
+		 * Performance Section
+		 */
+		if ( get_theme_mod( 'ocean_disable_lightbox', false ) ) {
+			$classes[] = 'no-lightbox';
+		}
+
 		// Return classes.
 		return $classes;
 
